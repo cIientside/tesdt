@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="icon" type="image/gif" href="https://cdn.discordapp.com/avatars/1228765716321271999/a_8244397905e442f4585345f35bb235f0.gif?size=1024" /> -->
+        <meta property="og:title" content="Evade">
+        <meta property="og:description" content="Simple user-app made to enhance your chats.">
+        <meta property="og:image" content="https://cdn.discordapp.com/avatars/1228765716321271999/141aa3383c8aebe17cccd04c2564f29e.png?size=1024">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="1024">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Evade">
+        <meta name="twitter:description" content="Simple user-app made to enhance your chats.">
+        <meta name="twitter:image" content="https://cdn.discordapp.com/avatars/1228765716321271999/141aa3383c8aebe17cccd04c2564f29e.png?size=1024">
+        <link rel="sitemap" href="/sitemap-index.xml">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#00000F">
+        <meta property="og:type" content="website">
+        <link rel="icon" type="image/png" href="https://cdn.discordapp.com/avatars/1228765716321271999/141aa3383c8aebe17cccd04c2564f29e.png?size=1024">
+        <meta name="generator" content="Astro v4.14.3">
+        <meta name="keywords" content="Evade, Discord bot, Discord user-app, Discord, bot, user-app, chat, chats, chat app, chat enhancement, chat app enhancement, chat app, chat enhancement app">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap">
+        <meta name="description" content="Simple user-app made to enhance your chats.">
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap">
+        </noscript>
+        <title>Evade</title>
+        <meta name="astro-view-transitions-enabled" content="true">
+        <meta name="astro-view-transitions-fallback" content="animate">
+        <!-- <AstroFont
+            config={[
+                {
+                    src: [],
+                    name: "Urbanist",
+                    preload: true,
+                    display: "swap",
+                    selector: "html",
+                    fallback: "sans-serif",
+                    googleFontsURL: 'https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap',
+                },
+            ]}
+        /> -->
+        <link rel="stylesheet" href="/_astro/authorize.1pJ7krBo.css">
+        <style>
+            .underlined[data-astro-cid-vnivfuh2] {
+                position: relative
+            }
+
+            .underlined[data-astro-cid-vnivfuh2]:after {
+                position: absolute;
+                left: 0;
+                bottom: -.4rem;
+                height: .4rem;
+                width: 100%;
+                background-image: url(/underline.svg);
+                background-size: cover;
+                --tw-content: "";
+                content: var(--tw-content)
+            }
+
+            .astro-route-announcer {
+                position: absolute;
+                left: 0;
+                top: 0;
+                clip: rect(0 0 0 0);
+                clip-path: inset(50%);
+                overflow: hidden;
+                white-space: nowrap;
+                width: 1px;
+                height: 1px
+            }
+
+            #toggle_nav[data-astro-cid-qgrrgaau]:checked~div[data-astro-cid-qgrrgaau] #hamburger[data-astro-cid-qgrrgaau] #line[data-astro-cid-qgrrgaau] {
+                --tw-translate-y: .375rem;
+                --tw-rotate: 45deg;
+                transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+            }
+
+            #toggle_nav[data-astro-cid-qgrrgaau]:checked~div[data-astro-cid-qgrrgaau] #hamburger[data-astro-cid-qgrrgaau] #line2[data-astro-cid-qgrrgaau] {
+                --tw-translate-y: -.25rem;
+                --tw-rotate: -45deg;
+                transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+            }
+
+            .toggled[data-astro-cid-qgrrgaau] div[data-astro-cid-qgrrgaau]:first-child {
+                --tw-translate-y: .375rem;
+                --tw-rotate: 45deg;
+                transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+            }
+
+            .toggled[data-astro-cid-qgrrgaau] div[data-astro-cid-qgrrgaau]:last-child {
+                --tw-translate-y: -.25rem;
+                --tw-rotate: -45deg;
+                transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+            }
+
+            html {
+                scroll-behavior: smooth
+            }
+
+            body {
+                margin: 0;
+                font-family: Urbanist,sans-serif
+            }
+
+            ::-webkit-scrollbar {
+                width: 5px;
+                background-color: transparent
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background-color: #fff;
+                border-radius: 8px;
+                border: 3px solid var(--bg-primary)
+            }
+
+            ::-webkit-scrollbar-track {
+                background-color: transparent;
+                border-radius: 24px
+            }
+
+            @keyframes astroFadeInOut {
+                0% {
+                    opacity: 1
+                }
+
+                to {
+                    opacity: 0
+                }
+            }
+
+            @keyframes astroFadeIn {
+                0% {
+                    opacity: 0
+                }
+            }
+
+            @keyframes astroFadeOut {
+                to {
+                    opacity: 0
+                }
+            }
+
+            @keyframes astroSlideFromRight {
+                0% {
+                    transform: translate(100%)
+                }
+            }
+
+            @keyframes astroSlideFromLeft {
+                0% {
+                    transform: translate(-100%)
+                }
+            }
+
+            @keyframes astroSlideToRight {
+                to {
+                    transform: translate(100%)
+                }
+            }
+
+            @keyframes astroSlideToLeft {
+                to {
+                    transform: translate(-100%)
+                }
+            }
+
+            @media (prefers-reduced-motion) {
+                ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*) {
+                    animation: none!important
+                }
+
+                [data-astro-transition-scope] {
+                    animation: none!important
+                }
+            }
+        </style>
+        <script type="module" src="/_astro/hoisted.E5Al_H6S.js"></script>
+        <script>
+            window.va = window.va || function() {
+                (window.vaq = window.vaq || []).push(arguments);
+            }
+            ;
+            var script = document.createElement('script');
+            script.defer = true;
+            script.src = '/_vercel/insights/script.js';
+            var head = document.querySelector('head');
+            head.appendChild(script);
+        </script>
+    </head>
+    <body class="bg-black">
+        <header class="fixed top-0 left-0 w-full z-50 transition-colors duration-300" data-astro-cid-qgrrgaau>
+            <nav class="relative w-full border-b border-white/5 lg:border-transparent" data-astro-cid-qgrrgaau>
+                <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                    <div class="relative flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 md:py-4" data-astro-cid-qgrrgaau>
+                        <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max" data-astro-cid-qgrrgaau>
+                            <a href="/#home" aria-label="logo" class="flex items-center space-x-2" data-astro-cid-qgrrgaau>
+                                <img src="https://cdn.discordapp.com/avatars/1228765716321271999/141aa3383c8aebe17cccd04c2564f29e.png?size=1024" alt="logo" class="rounded-full h-10 w-10" data-astro-cid-qgrrgaau>
+                                <span class="text-2xl font-bold text-white" data-astro-cid-qgrrgaau>Evade</span>
+                            </a>
+                            <div class="relative flex max-h-10 items-center lg:hidden" data-astro-cid-qgrrgaau>
+                                <button aria-label="hamburger" id="hamburger" class="relative -mr-6 p-6" data-astro-cid-qgrrgaau>
+                                    <div aria-hidden="true" id="line" class="m-auto h-0.5 w-5 rounded transition duration-300 bg-gray-300" data-astro-cid-qgrrgaau></div>
+                                    <div aria-hidden="true" id="line2" class="m-auto mt-2 h-0.5 w-5 rounded transition duration-300 bg-gray-300" data-astro-cid-qgrrgaau></div>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="navLayer" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 backdrop-blur-md transition duration-500 lg:hidden" data-astro-cid-qgrrgaau></div>
+                        <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border p-8 opacity-0 shadow-gray-600/10 transition-all duration-300 border-gray-700 shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none" data-astro-cid-qgrrgaau>
+                            <div class="w-full text-gray-200 lg:w-auto lg:pr-4 lg:pt-0" data-astro-cid-qgrrgaau>
+                                <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-sm" data-astro-cid-qgrrgaau>
+                                    <li data-astro-cid-qgrrgaau>
+                                        <a href="/#features" class="block transition hover:text-white md:px-4" data-astro-cid-qgrrgaau>
+                                            <span data-astro-cid-qgrrgaau>Features</span>
+                                        </a>
+                                    </li>
+                                    <li data-astro-cid-qgrrgaau>
+                                        <a href="/commands" class="block transition hover:text-white md:px-4" data-astro-cid-qgrrgaau>
+                                            <span data-astro-cid-qgrrgaau>Commands</span>
+                                        </a>
+                                    </li>
+                                    <li data-astro-cid-qgrrgaau>
+                                        <a href="/team" class="block transition hover:text-white md:px-4" data-astro-cid-qgrrgaau>
+                                            <span data-astro-cid-qgrrgaau>Team</span>
+                                        </a>
+                                    </li>
+                                    <li data-astro-cid-qgrrgaau>
+                                        <a href="/premium" class="flex gap-2 transition hover:text-white md:px-4" data-astro-cid-qgrrgaau>
+                                            <span data-astro-cid-qgrrgaau>Premium</span>
+                                            <span class="flex rounded-full px-1.5 py-0.5 text-xs tracking-wider bg-white/10 text-orange-300" data-astro-cid-qgrrgaau>new</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-12 lg:mt-0" data-astro-cid-qgrrgaau>
+                                <a href="https://discord.gg/w2gjth7E47" class="relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-yeah before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max" data-astro-cid-qgrrgaau>
+                                    <span class="relative text-sm font-semibold text-white" data-astro-cid-qgrrgaau>Discord</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="space-y-40 mb-40">
+            <div class="relative" id="home">
+                <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-90 dark:opacity-80">
+                    <div class="blur-[106px] h-32 bg-gradient-to-r from-gray-700 to-gray-700"></div>
+                    <div class="blur-[106px] h-32 bg-gradient-to-r from-gray-700 to-gray-700"></div>
+                </div>
+                <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                    <div class="relative pt-36 mx-auto text-center lg:w-2/3">
+                        <h1 class="text-white font-bold text-4xl md:text-7xl xl:text-7xl">
+                            <span class="block">Enhancing</span>
+                            <span class="relative inline-block mx-2">
+                                <style>
+                                    astro-island,astro-slot,astro-static-slot {
+                                        display: contents
+                                    }
+                                </style>
+                                <script>
+                                    ( () => {
+                                        var e = async t => {
+                                            await (await t())()
+                                        }
+                                        ;
+                                        (self.Astro || (self.Astro = {})).only = e;
+                                        window.dispatchEvent(new Event("astro:only"));
+                                    }
+                                    )();
+                                    ;( () => {
+                                        var A = Object.defineProperty;
+                                        var g = (i, o, a) => o in i ? A(i, o, {
+                                            enumerable: !0,
+                                            configurable: !0,
+                                            writable: !0,
+                                            value: a
+                                        }) : i[o] = a;
+                                        var d = (i, o, a) => g(i, typeof o != "symbol" ? o + "" : o, a);
+                                        {
+                                            let i = {
+                                                0: t => m(t),
+                                                1: t => a(t),
+                                                2: t => new RegExp(t),
+                                                3: t => new Date(t),
+                                                4: t => new Map(a(t)),
+                                                5: t => new Set(a(t)),
+                                                6: t => BigInt(t),
+                                                7: t => new URL(t),
+                                                8: t => new Uint8Array(t),
+                                                9: t => new Uint16Array(t),
+                                                10: t => new Uint32Array(t)
+                                            }
+                                              , o = t => {
+                                                let[l,e] = t;
+                                                return l in i ? i[l](e) : void 0
+                                            }
+                                              , a = t => t.map(o)
+                                              , m = t => typeof t != "object" || t === null ? t : Object.fromEntries(Object.entries(t).map( ([l,e]) => [l, o(e)]));
+                                            class y extends HTMLElement {
+                                                constructor() {
+                                                    super(...arguments);
+                                                    d(this, "Component");
+                                                    d(this, "hydrator");
+                                                    d(this, "hydrate", async () => {
+                                                        var b;
+                                                        if (!this.hydrator || !this.isConnected)
+                                                            return;
+                                                        let e = (b = this.parentElement) == null ? void 0 : b.closest("astro-island[ssr]");
+                                                        if (e) {
+                                                            e.addEventListener("astro:hydrate", this.hydrate, {
+                                                                once: !0
+                                                            });
+                                                            return
+                                                        }
+                                                        let c = this.querySelectorAll("astro-slot")
+                                                          , n = {}
+                                                          , h = this.querySelectorAll("template[data-astro-template]");
+                                                        for (let r of h) {
+                                                            let s = r.closest(this.tagName);
+                                                            s != null && s.isSameNode(this) && (n[r.getAttribute("data-astro-template") || "default"] = r.innerHTML,
+                                                            r.remove())
+                                                        }
+                                                        for (let r of c) {
+                                                            let s = r.closest(this.tagName);
+                                                            s != null && s.isSameNode(this) && (n[r.getAttribute("name") || "default"] = r.innerHTML)
+                                                        }
+                                                        let p;
+                                                        try {
+                                                            p = this.hasAttribute("props") ? m(JSON.parse(this.getAttribute("props"))) : {}
+                                                        } catch (r) {
+                                                            let s = this.getAttribute("component-url") || "<unknown>"
+                                                              , v = this.getAttribute("component-export");
+                                                            throw v && (s += ` (export ${v})`),
+                                                            console.error(`[hydrate] Error parsing props for component ${s}`, this.getAttribute("props"), r),
+                                                            r
+                                                        }
+                                                        let u;
+                                                        await this.hydrator(this)(this.Component, p, n, {
+                                                            client: this.getAttribute("client")
+                                                        }),
+                                                        this.removeAttribute("ssr"),
+                                                        this.dispatchEvent(new CustomEvent("astro:hydrate"))
+                                                    }
+                                                    );
+                                                    d(this, "unmount", () => {
+                                                        this.isConnected || this.dispatchEvent(new CustomEvent("astro:unmount"))
+                                                    }
+                                                    )
+                                                }
+                                                disconnectedCallback() {
+                                                    document.removeEventListener("astro:after-swap", this.unmount),
+                                                    document.addEventListener("astro:after-swap", this.unmount, {
+                                                        once: !0
+                                                    })
+                                                }
+                                                connectedCallback() {
+                                                    if (!this.hasAttribute("await-children") || document.readyState === "interactive" || document.readyState === "complete")
+                                                        this.childrenConnectedCallback();
+                                                    else {
+                                                        let e = () => {
+                                                            document.removeEventListener("DOMContentLoaded", e),
+                                                            c.disconnect(),
+                                                            this.childrenConnectedCallback()
+                                                        }
+                                                          , c = new MutationObserver( () => {
+                                                            var n;
+                                                            ((n = this.lastChild) == null ? void 0 : n.nodeType) === Node.COMMENT_NODE && this.lastChild.nodeValue === "astro:end" && (this.lastChild.remove(),
+                                                            e())
+                                                        }
+                                                        );
+                                                        c.observe(this, {
+                                                            childList: !0
+                                                        }),
+                                                        document.addEventListener("DOMContentLoaded", e)
+                                                    }
+                                                }
+                                                async childrenConnectedCallback() {
+                                                    let e = this.getAttribute("before-hydration-url");
+                                                    e && await import(e),
+                                                    this.start()
+                                                }
+                                                async start() {
+                                                    let e = JSON.parse(this.getAttribute("opts"))
+                                                      , c = this.getAttribute("client");
+                                                    if (Astro[c] === void 0) {
+                                                        window.addEventListener(`astro:${c}`, () => this.start(), {
+                                                            once: !0
+                                                        });
+                                                        return
+                                                    }
+                                                    try {
+                                                        await Astro[c](async () => {
+                                                            let n = this.getAttribute("renderer-url")
+                                                              , [h,{default: p}] = await Promise.all([import(this.getAttribute("component-url")), n ? import(n) : () => () => {}
+                                                            ])
+                                                              , u = this.getAttribute("component-export") || "default";
+                                                            if (!u.includes("."))
+                                                                this.Component = h[u];
+                                                            else {
+                                                                this.Component = h;
+                                                                for (let f of u.split("."))
+                                                                    this.Component = this.Component[f]
+                                                            }
+                                                            return this.hydrator = p,
+                                                            this.hydrate
+                                                        }
+                                                        , e, this)
+                                                    } catch (n) {
+                                                        console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`, n)
+                                                    }
+                                                }
+                                                attributeChangedCallback() {
+                                                    this.hydrate()
+                                                }
+                                            }
+                                            d(y, "observedAttributes", ["props"]),
+                                            customElements.get("astro-island") || customElements.define("astro-island", y)
+                                        }
+                                    }
+                                    )();
+                                </script>
+                                <astro-island uid="Z2gE3tU" component-url="/_astro/FlipWords.cARzEPaC.js" component-export="FlipWordsComponent" renderer-url="/_astro/client.BIGLHmRd.js" props="{&quot;words&quot;:[1,[[0,&quot;DMs&quot;],[0,&quot;Servers&quot;],[0,&quot;GCs&quot;]]],&quot;duration&quot;:[0,600],&quot;className&quot;:[0,&quot;custom-class&quot;]}" ssr="" client="only" opts="{&quot;name&quot;:&quot;FlipWordsComponent&quot;,&quot;value&quot;:true}"></astro-island>
+                            </span>
+                            <span class="block text-white">with Evade
+</span>
+                        </h1>
+                        <p class="mt-4 text-gray-200 font-bold text-lg md:text-2xl xl:text-2xl">Simple, yet advanced, feature-rich Discord user-app.
+</p>
+                        <p class="mt-2 text-gray-200 font-bold text-lg md:text-2xl xl:text-2xl">Used by 668 users and 39 premium users.
+</p>
+                        <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+                            <a href="/authorize" class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-yeah before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+                                <span class="relative text-base font-semibold text-white">Authorize</span>
+                            </a>
+                            <a href="/premium" class="relative flex h-11 w-full items-center justify-center px-6 py-2 gap-2 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 before:border-gray-700 before:bg-gray-800 sm:w-max">
+                                <span class="relative text-base font-semibold text-white">Premium</span>
+                                <span class="relative flex items-center justify-center rounded-full px-2 py-0.5 text-xs tracking-wider bg-white/10 text-orange-300">new</span>
+                            </a>
+                            <a href="/commands" class="relative flex h-11 w-full items-center justify-center px-6 py-2 gap-2 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 before:border-gray-700 before:bg-gray-800 sm:w-max">
+                                <span class="relative text-base font-semibold text-white">Commands</span>
+                            </a>
+                            <a href="https://discord.gg/w2gjth7E47" class="relative flex h-11 w-full items-center justify-center px-6 py-2 gap-2 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 before:border-gray-700 before:bg-gray-800 sm:w-max">
+                                <span class="relative text-base font-semibold text-white">Discord</span>
+                            </a>
+                        </div>
+                        <div class="mt-16 flex justify-center">
+                            <a href="#features" class="relative flex items-center justify-center">
+                                <svg class="w-8 h-8 text-primary dark:text-white animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="features" class="scroll-mt-24" data-astro-cid-vnivfuh2>
+                <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                    <div class="md:w-2/3 lg:w-1/2" data-astro-cid-vnivfuh2>
+                        <h2 class="my-8 font-bold text-white md:text-2xl flex items-center" data-astro-cid-vnivfuh2>
+                            <img src="https://em-content.zobj.net/source/telegram/386/star-struck_1f929.webp" class="w-12 h-12 mr-2" data-astro-cid-vnivfuh2>
+                            Powering &nbsp;<p class="underlined" data-astro-cid-vnivfuh2>your conversations</p>
+                            &nbsp;with Evade
+
+                        </h2>
+                        <p class="text-gray-200" data-astro-cid-vnivfuh2>Evade Bot is your all-in-one user-app, integrating powerful features for a seamless chat experience.
+</p>
+                    </div>
+                    <div class="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4" data-astro-cid-vnivfuh2>
+                        <div class="group relative bg-yo transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10" data-astro-cid-vnivfuh2>
+                            <div class="relative space-y-8 py-12 p-8" data-astro-cid-vnivfuh2>
+                                <img src="https://em-content.zobj.net/source/apple/391/dashing-away_1f4a8.png" class="w-12" width="512" height="512" alt="Real-time Responses" data-astro-cid-vnivfuh2>
+                                <div class="space-y-2" data-astro-cid-vnivfuh2>
+                                    <h5 class="text-xl font-semibold text-white transition" data-astro-cid-vnivfuh2>Real-time Responses
+</h5>
+                                    <p class="text-gray-600 dark:text-gray-300" data-astro-cid-vnivfuh2>Experience lightning-fast replies with Evade Bot's optimized performance.
+</p>
+                                </div>
+                                <a href="#" class="flex items-center justify-between group-hover:text-secondary" data-astro-cid-vnivfuh2>
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+              <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd" />
+            </svg>                 -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="group relative bg-yo transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10" data-astro-cid-vnivfuh2>
+                            <div class="relative space-y-8 py-12 p-8" data-astro-cid-vnivfuh2>
+                                <img src="https://em-content.zobj.net/source/telegram/386/sparkles_2728.webp" class="w-12" width="512" height="512" alt="Enhanced Integration" data-astro-cid-vnivfuh2>
+                                <div class="space-y-2" data-astro-cid-vnivfuh2>
+                                    <h5 class="text-xl font-semibold text-white transition" data-astro-cid-vnivfuh2>Enhanced Integration
+</h5>
+                                    <p class="text-gray-300" data-astro-cid-vnivfuh2>Seamlessly integrate with platforms like Discord, socials like Tiktok, Instagram and Last.fm.
+</p>
+                                </div>
+                                <a href="#" class="flex items-center justify-between group-hover:text-secondary" data-astro-cid-vnivfuh2>
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+              <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd" />
+            </svg>                 -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="group relative bg-yo transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10" data-astro-cid-vnivfuh2>
+                            <div class="relative space-y-8 py-12 p-8" data-astro-cid-vnivfuh2>
+                                <img src="https://em-content.zobj.net/source/apple/391/books_1f4da.png" class="w-12" width="512" height="512" alt="User-Friendly Interface" data-astro-cid-vnivfuh2>
+                                <div class="space-y-2" data-astro-cid-vnivfuh2>
+                                    <h5 class="text-xl font-semibold text-white" data-astro-cid-vnivfuh2>User-Friendly Interface
+</h5>
+                                    <p class="text-gray-600 dark:text-gray-300" data-astro-cid-vnivfuh2>Easy-to-use commands with a simple, intuitive interface.
+</p>
+                                </div>
+                                <a href="#" class="flex items-center justify-between group-hover:text-secondary" data-astro-cid-vnivfuh2>
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+              <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd" />
+            </svg>                 -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="group relative bg-yo transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10" data-astro-cid-vnivfuh2>
+                            <div class="relative space-y-8 py-12 p-8" data-astro-cid-vnivfuh2>
+                                <img src="https://em-content.zobj.net/source/apple/391/hammer-and-wrench_1f6e0-fe0f.png" class="w-12" width="512" height="512" alt="Customizable Features" data-astro-cid-vnivfuh2>
+                                <div class="space-y-2" data-astro-cid-vnivfuh2>
+                                    <h5 class="text-xl font-semibold text-white transition" data-astro-cid-vnivfuh2>Customizable Features
+</h5>
+                                    <p class="text-gray-600 dark:text-gray-300" data-astro-cid-vnivfuh2>Tailor the bot's functionalities to your specific needs.
+</p>
+                                </div>
+                                <a href="#" class="flex items-center justify-between group-hover:text-secondary" data-astro-cid-vnivfuh2>
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+              <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd" />
+            </svg>                 -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="mt-auto py-4 text-center text-gray-300">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="flex justify-center">
+                    <span class="text-sm">
+                        <a href="/terms" class="font-medium hover:text-primary transition-colors duration-300">Terms of Use</a>
+                        |
+<a href="/privacy" class="font-medium hover:text-primary transition-colors duration-300">Privacy Policy</a>
+                        |
+<a href="/team" class="font-medium hover:text-primary transition-colors duration-300">Team</a>
+                        |
+<a href="mailto:admin@evade.rest" class="font-medium hover:text-primary transition-colors duration-300">Contact</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
